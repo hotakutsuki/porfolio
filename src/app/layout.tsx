@@ -1,5 +1,4 @@
 import I18nProvider from './i18n';
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from './Sidebar';
 import ThemeProvider from './ThemeProvider';
