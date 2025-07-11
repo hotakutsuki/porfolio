@@ -6,16 +6,6 @@ import ThemeProvider from './ThemeProvider';
 import BackgroundGlow from './BackgroundGlow';
 import LanguageDropdown from '../components/LanguageDropdown';
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
-
 export const metadata = {
     title: "Josue Ortiz | Portfolio",
     description: "Remote Full Stack & Mobile Developer Portfolio",

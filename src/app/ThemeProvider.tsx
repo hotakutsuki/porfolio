@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, createContext, useContext } from "react";
 
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 const ThemeContext = createContext<any>(null);
 
 export function useTheme() {

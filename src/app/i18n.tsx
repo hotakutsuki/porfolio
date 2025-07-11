@@ -211,6 +211,7 @@ const translations = {
     },
 };
 
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 const I18nContext = createContext<any>(null);
 
 export function useI18n() {
