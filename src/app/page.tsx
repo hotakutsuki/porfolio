@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { useI18n } from "./i18n";
 import Image from "next/image";
 import profilePic from "../assets/profile.png";
@@ -162,9 +162,9 @@ export default function Home() {
                 </ul>
             </section>
             {/* Footer */}
-            <footer className="text-center py-8 text-gray-400 text-sm">
+            {/* <footer className="text-center py-8 text-gray-400 text-sm">
                 &copy; {new Date().getFullYear()} Josue Ortiz. All rights reserved.
-            </footer>
+            </footer> */}
         </div >
     );
 }

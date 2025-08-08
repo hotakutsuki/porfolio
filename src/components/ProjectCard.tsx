@@ -1,7 +1,14 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import { Badge } from "@/components/ui/badge"
 
-export default function ProjectCard({ project }) {
+interface Project {
+    image: StaticImageData;
+    desc: string;
+    link: string;
+    name: string;
+}
+
+export default function ProjectCard({ project }: { project: Project }) {
     return (
         <div className="rounded-xl m-4">
             <div className="absolute h-full w-full md:max-w-[330px] max-w-[215px] left-0 z-1">
