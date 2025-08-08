@@ -19,13 +19,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         <BackgroundGlow />
                         <LanguageDropdown />
                         <style>{`
-                        @media (max-width: 768px) {
+                        @media (max-width: 1023px) {
                             main.main-content { margin-left: 0 !important; }
                         }
                     `}</style>
                         <div style={{ display: 'flex', minHeight: '100vh', position: 'relative', zIndex: 1 }}>
                             <Sidebar />
-                            <main className="main-content" style={{ flex: 1, marginLeft: 400, padding: '3rem 3rem', minHeight: '100vh' }}>
+                            <main className="min-h-screen flex-1 md:p-8 p-4">
                                 {children}
                             </main>
                         </div>

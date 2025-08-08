@@ -19,7 +19,9 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
 
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
-            {children}
+            <div className={theme}>
+                {children}
+            </div>
         </ThemeContext.Provider>
     );
 } 
