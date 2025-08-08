@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion } from "motion/react"
 import { Badge } from "@/components/ui/badge"
 
@@ -18,12 +18,26 @@ function getWindowDimensions() {
     };
 }
 
-export default function ExperienceTime(exp) {
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-    const [isHover, setIsHover] = useState(false);
-    const [keepOpen, setKeepOpen] = useState(false);
-    const [openHeight, setOpenHeight] = useState(220);
-    const [closeHeight, setCloseHeight] = useState(90);
+interface ExperienceTimeProps {
+    year: string;
+    logo: StaticImageData;
+    company: string;
+    role: string;
+    badges: string[];
+    desc: string;
+}
+
+interface WindowDimensions {
+    width: number;
+    height: number;
+}
+
+export default function ExperienceTime(exp: ExperienceTimeProps) {
+    const [windowDimensions, setWindowDimensions] = useState<WindowDimensions>(getWindowDimensions());
+    const [isHover, setIsHover] = useState<boolean>(false);
+    const [keepOpen, setKeepOpen] = useState<boolean>(false);
+    const [openHeight, setOpenHeight] = useState<number>(220);
+    const [closeHeight, setCloseHeight] = useState<number>(90);
     // const bigHeight = 200
 
     useEffect(() => {
