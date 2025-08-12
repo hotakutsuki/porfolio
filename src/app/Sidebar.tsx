@@ -1,6 +1,6 @@
 "use client";
 import { useI18n } from "./i18n";
-import React, { useRef } from 'react';
+import React from 'react';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
 import { socials, SocialIcon } from '@/components/SocialIcon'
 import DownloadCV from "@/components/DownloadCV";
