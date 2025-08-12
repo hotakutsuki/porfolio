@@ -7,8 +7,8 @@ import { motion } from "motion/react"
 export default function LanguageDropdown() {
     const { theme, toggleTheme } = useTheme();
     const { setLang } = useI18n();
-    const [x, setX] = useState(-5)
-    const [width, setWidth] = useState(40)
+    const [x, setX] = useState(-10)
+    const [width, setWidth] = useState(50)
 
     return (
         <div className="fixed top-6 right-8 z-50 space-x-4">

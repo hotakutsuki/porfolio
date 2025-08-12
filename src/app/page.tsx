@@ -12,6 +12,7 @@ import cargill from "../assets/logos/Cargill.jpg"
 import jobsity from "../assets/logos/jobsity.png"
 import grupoBarlovento from "../assets/logos/grupobarlovento.png"
 import ministeriodecultura from "../assets/logos/Ministerio.jpg"
+import barcade from "../assets/logos/barcade.jpg"
 import nyancoffee from "../assets/logos/nyan.jpg"
 import inkaGif from "../assets/projects/inkachess/inka.gif"
 import iaGif from "../assets/projects/ia/evolution.gif"
@@ -21,10 +22,13 @@ import { motion } from "motion/react"
 import ProjectCard from "@/components/ProjectCard";
 import ExperienceTime from "@/components/ExperienceTime";
 import { socials, SocialIcon } from '@/components/SocialIcon'
+import DownloadCV from "@/components/DownloadCV";
+import PublicChat from "@/components/PublicChat";
 
 export default function Home() {
     const { t } = useI18n();
     const logos = [
+        barcade,
         altscore,
         gynger,
         cargill,
@@ -85,7 +89,6 @@ export default function Home() {
                 <motion.div
                     initial={{ y: 10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: -10, opacity: 0 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
                 >
                     <Image
@@ -99,27 +102,72 @@ export default function Home() {
                 </motion.div>
             </div>
             <div className="lg:hidden flex flex-col">
-                <h1 className="text-4xl font-bold mb-2">{t.name}</h1>
-                <h2 className="text-lg font-medium text-gray-500 dark:text-gray-300 mb-4">{t.title}</h2>
-                <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed text-base">{t.shortSummary}</p>
-                <a href="/src/assets/Profile.pdf" target="_blank" rel="noopener noreferrer" >
-                    <p className="text-primary font-semibold mb-8 hover:underline">
-                        {t.download}
-                    </p>
-                </a>
+                <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }}>
+                    <h1 className="text-4xl font-bold mb-2">{t.name}</h1>
+                </motion.div>
+                <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.7 }}>
+                    <h2 className="text-lg font-medium text-gray-500 dark:text-gray-300 mb-4">{t.title}</h2>
+                </motion.div>
+                <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.8 }}>
+                    <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed text-base">{t.shortSummary}</p>
+
+                </motion.div>
+                <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.9 }}>
+                    <DownloadCV />
+                </motion.div>
+
                 {/* Social icons */}
                 <div className="flex gap-4 mt-auto mb-8">
-                    {socials.map((s) => (
-                        <SocialIcon key={s.icon} {...s} />
+                    {socials.map((s, i) => (
+                        <motion.div key={s.icon} initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 + i / 10 }}>
+                            <SocialIcon key={s.icon} {...s} />
+                        </motion.div>
+
                     ))}
                 </div>
             </div >
             {/* About Section */}
             <section id="about" className="mb-12 w-full max-w-2xl ">
-                <h2 className="text-3xl font-bold mb-4">{t.about}</h2>
-                <p className="max-w-2xl text-gray-700 dark:text-gray-300 leading-relaxed">
-                    {t.summary}
-                </p>
+                <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }}>
+                    <h2 className="text-3xl font-bold mb-4">{t.about}</h2>
+                </motion.div>
+                <div id="summary-content" className="max-w-2xl text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.7 }}>
+                        <p id="summary1" className="mb-3">
+                            {t.summary1}
+                        </p>
+                    </motion.div>
+                    <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.8 }}>
+                        <p id="summary2" className="mb-3">
+                            <span>{t.summary2}</span>
+                            <span className="font-bold">
+                                {t.summary2_1}
+                            </span>
+                            <span>{t.summary2_2}</span>
+                        </p>
+                    </motion.div>
+                    <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.9 }}>
+                        <p id="summary3" className="mb-3">
+                            <span>{t.summary3}</span>
+                            <a href="https://www.instagram.com/barcade_uio/" target="_blank" rel="noopener noreferrer" className="font-bold" >{t.summary3_1}</a>
+                            <span>{t.summary3_2}</span>
+                        </p>
+                    </motion.div>
+                    <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1 }}>
+                        <p id="summary4" className="mb-3">
+                            <span>{t.summary4}</span>
+                            <a href="https://www.cargill.com/animal-nutrition/species/aquaculture/products/iquatic" target="_blank" rel="noopener noreferrer" className="font-bold">{t.summary4_1}</a>
+                            <span >{t.summary4_2}</span>
+                            <a href="https://www.buenplan.com.ec/" target="_blank" rel="noopener noreferrer" className="font-bold">{t.summary4_3}</a>
+                            <span>{t.summary4_4}</span>
+                            <a href="https://github.com/hotakutsuki/MLDodge" target="_blank" rel="noopener noreferrer" className="font-bold">{t.summary4_5}</a>
+                            <span>{t.summary4_6}</span>
+                        </p>
+                    </motion.div>
+                    <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1.1 }}>
+                        <p>{t.summary5}</p>
+                    </motion.div>
+                </div>
             </section>
             {/* Experience Section */}
             <section id="experience" className="mb-12 w-full md:w-2xl">
@@ -151,20 +199,28 @@ export default function Home() {
                 <h2 className="text-3xl font-bold mb-4">{t.contact}</h2>
                 <ul className="space-y-2 md:w-2xl w-md">
                     <li>Email: <a href="mailto:jotakutsuki@gmail.com" className="underline text-primary hover:text-blue600 visited:text-purple-600">
-                        <span className="sr-only">Email: </span>
-                        <span className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">jotakutsuki@gmail.com</span></a></li>
+                        <span className="sr-only">Email: </span>jotakutsuki@gmail.com</a></li>
                     <li>Phone: <a href="tel:+593992989963" className="underline text-primary hover:text-accent">
-                        <span className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">+593992989963</span></a></li>
+                        +593992989963</a></li>
                     <li>LinkedIn: <a href="https://www.linkedin.com/in/josue-ortiz-developer" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:text-accent">
-                        <span className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">Josue Ortiz Developer</span></a></li>
+                        Josue Ortiz Developer</a></li>
                     <li>GitHub: <a href="https://github.com/hotakutsuki" target="_blank" rel="noopener noreferrer" className="underline text-primary hover:text-accent">
-                        <span className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">hotakutsuki</span></a></li>
+                        hotakutsuki</a></li>
                 </ul>
             </section>
+
+            {/* Public Chat Section */}
+            <section id="chat">
+                <h2 className="text-3xl font-bold mb-4">{t.chat_section_title}</h2>
+                <div className="md:w-2xl w-md">
+                    <PublicChat t={t} />
+                </div>
+            </section>
             {/* Footer */}
-            {/* <footer className="text-center py-8 text-gray-400 text-sm">
+            <footer className="text-center py-8 text-gray-400 text-sm">
                 &copy; {new Date().getFullYear()} Josue Ortiz. All rights reserved.
-            </footer> */}
+                ☝ This is kinda pretentious huh? But I like it.
+            </footer>
         </div >
     );
 }

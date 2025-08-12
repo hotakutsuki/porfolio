@@ -9,7 +9,12 @@ export function useTheme() {
 }
 
 export default function ThemeProvider({ children }: { children: React.ReactNode }) {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState(() => {
+        if (typeof window !== "undefined" && window.matchMedia) {
+            return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        return "light";
+    });
 
     useEffect(() => {
         document.body.setAttribute("data-theme", theme);
@@ -24,4 +29,4 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
             </div>
         </ThemeContext.Provider>
     );
-} 
+}
