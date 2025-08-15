@@ -1,0 +1,28 @@
+Accessibility Report for Josue Ortiz Portfolio
+
+## WCAG 2.1 AA Compliance
+- Color contrast ratios meet standards
+- Keyboard navigation support
+- Screen reader compatibility
+- Focus indicators visible
+- Semantic HTML structure
+
+## Accessibility Features
+- ARIA labels and roles
+- Alt text for images
+- Skip navigation links
+- Form field labels
+- Error message announcements
+
+## Testing Tools
+- axe-core
+- Lighthouse Accessibility
+- WAVE Web Accessibility Evaluator
+- Color Contrast Analyzer
+
+## Improvements Made
+- Added semantic HTML elements
+- Enhanced keyboard navigation
+- Improved color contrast
+- Added ARIA attributes
+- Screen reader optimization

@@ -1,0 +1,59 @@
+Accessibility Checklist for Josue Ortiz Portfolio
+
+## WCAG 2.1 AA Compliance
+
+### Perceivable
+✅ Text alternatives for images
+✅ Captions for multimedia
+✅ Adaptable content structure
+✅ Distinguishable content (color, contrast)
+
+### Operable
+✅ Keyboard accessible navigation
+✅ Sufficient time for interactions
+✅ No content that causes seizures
+✅ Navigable content structure
+
+### Understandable
+✅ Readable and understandable text
+✅ Predictable page behavior
+✅ Input assistance for forms
+✅ Error identification and suggestions
+
+### Robust
+✅ Compatible with assistive technologies
+✅ Valid HTML markup
+✅ Semantic structure
+✅ ARIA attributes where needed
+
+## Specific Implementations
+✅ Semantic HTML elements
+✅ Proper heading hierarchy (H1, H2, H3)
+✅ Alt text for all images
+✅ ARIA labels and roles
+✅ Focus indicators visible
+✅ Skip navigation links
+✅ Form field labels
+✅ Error message announcements
+
+## Testing Tools
+✅ axe-core accessibility testing
+✅ Lighthouse Accessibility audit
+✅ WAVE Web Accessibility Evaluator
+✅ Color Contrast Analyzer
+✅ Screen reader testing
+✅ Keyboard navigation testing
+
+## Mobile Accessibility
+✅ Touch target sizes (44px minimum)
+✅ Swipe gestures supported
+✅ Voice control compatibility
+✅ Screen reader optimization
+✅ High contrast mode support
+
+## Performance for Accessibility
+✅ Fast loading times
+✅ Reduced motion support
+✅ High contrast themes
+✅ Font size adjustment
+✅ Focus management

@@ -1,0 +1,51 @@
+Performance Budget for Josue Ortiz Portfolio
+
+## Page Load Targets
+- First Contentful Paint (FCP): < 1.8s
+- Largest Contentful Paint (LCP): < 2.5s
+- First Input Delay (FID): < 100ms
+- Cumulative Layout Shift (CLS): < 0.1
+- Time to Interactive (TTI): < 3.8s
+
+## File Size Limits
+- Total page size: < 2MB
+- HTML: < 50KB
+- CSS: < 100KB
+- JavaScript: < 500KB
+- Images: < 1MB
+- Fonts: < 100KB
+
+## Image Optimization
+- Profile picture: < 200KB
+- Project GIFs: < 500KB each
+- Company logos: < 50KB each
+- Format: WebP/AVIF preferred
+- Compression: 80% quality minimum
+
+## Code Optimization
+- Bundle size: < 500KB
+- Tree shaking: Enabled
+- Code splitting: Implemented
+- Lazy loading: All non-critical resources
+- Minification: CSS, JS, HTML
+
+## Caching Strategy
+- Static assets: 1 year
+- Images: 6 months
+- CSS/JS: 1 month
+- HTML: 1 day
+- API responses: 1 hour
+
+## CDN Configuration
+- Global distribution
+- Edge caching
+- Gzip compression
+- HTTP/2 support
+- SSL/TLS 1.3
+
+## Monitoring Tools
+- Lighthouse CI
+- WebPageTest
+- PageSpeed Insights
+- Core Web Vitals
+- Real User Monitoring

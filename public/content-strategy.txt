@@ -1,0 +1,55 @@
+Content Strategy for Josue Ortiz Portfolio
+
+## Content Pillars
+1. Technical Expertise
+   - Full Stack Development
+   - Mobile Development
+   - AI/ML Development
+   - Cloud Technologies
+
+2. Professional Experience
+   - International Companies
+   - Startup Experience
+   - Leadership Roles
+   - Project Management
+
+3. Personal Brand
+   - Innovation Focus
+   - Problem-solving Approach
+   - Continuous Learning
+   - Cultural Diversity
+
+## Content Types
+- Portfolio Projects
+- Technical Blog Posts
+- Case Studies
+- Tutorial Videos
+- Code Examples
+- Industry Insights
+
+## Content Calendar
+- Weekly: Project updates
+- Monthly: Technical deep-dives
+- Quarterly: Industry analysis
+- Annually: Portfolio refresh
+
+## SEO Content Goals
+- Target keyword: "Josue Ortiz"
+- Secondary: "Full Stack Developer Ecuador"
+- Long-tail: "React TypeScript Developer Quito"
+- Local: "Developer Portfolio Ecuador"
+
+## Content Distribution
+- LinkedIn articles
+- GitHub READMEs
+- Medium posts
+- YouTube tutorials
+- Twitter threads
+- Dev.to articles
+
+## Success Metrics
+- Search rankings for target keywords
+- Organic traffic growth
+- Social media engagement
+- Recruiter inquiries
+- Portfolio views

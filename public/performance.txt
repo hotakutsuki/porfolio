@@ -1,0 +1,26 @@
+Performance Optimization Report for Josue Ortiz Portfolio
+
+## Core Web Vitals Targets
+- Largest Contentful Paint (LCP): < 2.5s
+- First Input Delay (FID): < 100ms
+- Cumulative Layout Shift (CLS): < 0.1
+
+## Optimization Techniques
+- Image optimization with Next.js Image component
+- Code splitting and lazy loading
+- CSS and JavaScript minification
+- Gzip compression enabled
+- Browser caching headers
+- CDN optimization
+
+## Monitoring
+- Google PageSpeed Insights
+- WebPageTest
+- Lighthouse CI
+- Real User Monitoring (RUM)
+
+## Performance Budget
+- Total page size: < 2MB
+- JavaScript: < 500KB
+- CSS: < 100KB
+- Images: < 1MB

@@ -1,0 +1,49 @@
+Local SEO Strategy for Josue Ortiz Portfolio
+
+## Geographic Targeting
+- Primary Location: Quito, Ecuador
+- Secondary: Ecuador (country-wide)
+- Tertiary: Latin America
+- International: Remote work opportunities
+
+## Local Keywords
+- "Developer Quito Ecuador"
+- "Software Engineer Ecuador"
+- "Tech Professional Quito"
+- "Developer Portfolio Ecuador"
+- "Remote Developer Ecuador"
+
+## Google My Business Optimization
+- Business Name: Josue Ortiz - Full Stack Developer
+- Category: Software Developer
+- Service Area: Ecuador, Remote
+- Hours: Available for consultation
+- Photos: Portfolio images, profile picture
+
+## Local Business Schema
+✅ Organization schema with address
+✅ PostalAddress schema for Quito
+✅ GeoCoordinates for Quito
+✅ Service schema for development services
+✅ AreaServed: Ecuador, Worldwide
+
+## Local Content Strategy
+- Mention Ecuadorian companies worked with
+- Highlight local projects and clients
+- Include Ecuadorian tech community involvement
+- Reference local tech events and meetups
+- Showcase local business experience
+
+## Local Link Building
+- Ecuadorian tech blogs
+- Local business directories
+- Regional tech communities
+- Ecuadorian developer forums
+- Local business associations
+
+## Local SEO Tools
+- Google My Business Insights
+- Local keyword research
+- Local competitor analysis
+- Local citation building
+- Local review management

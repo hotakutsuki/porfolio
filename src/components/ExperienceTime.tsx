@@ -38,7 +38,15 @@ export default function ExperienceTime(exp: ExperienceTimeProps) {
     const [keepOpen, setKeepOpen] = useState<boolean>(false);
     const [openHeight, setOpenHeight] = useState<number>(220);
     const [closeHeight, setCloseHeight] = useState<number>(90);
-    // const bigHeight = 200
+
+    const badgeColors = [
+        "bg-[var(--chart-1)] text-[var(--background)]",
+        "bg-[var(--chart-2)] text-[var(--background)]",
+        "bg-[var(--chart-3)] text-[var(--background)]",
+        "bg-[var(--chart-4)] text-[var(--background)]",
+        "bg-[var(--chart-5)] text-[var(--background)]",
+        "bg-[var(--muted)] text-[var(--foreground)]",
+    ];
 
     useEffect(() => {
         function handleResize() {
@@ -96,7 +104,10 @@ export default function ExperienceTime(exp: ExperienceTimeProps) {
                     </div>
                     <div className="w-40 h-full space-x-1 space-y-1 flex flex-wrap justify-end">
                         {exp.badges.map((badge, idx) => (
-                            <Badge key={idx} className="bg-indigo-400 dark:bg-indigo-300 border-indigo-500 h-6 text-xs">
+                            <Badge
+                                key={idx}
+                                className={`${badgeColors[idx % badgeColors.length]} border border-[var(--border)] h-5`}
+                            >
                                 {badge}
                             </Badge>
                         ))}

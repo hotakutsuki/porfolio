@@ -1,0 +1,13 @@
+/* TEAM */
+    Developer: Josue Ortiz
+    Contact: jotakutsuki@gmail.com
+    From: Quito, Ecuador
+
+/* SITE */
+    Last update: 2024/12/19
+    Language: English, Spanish, Japanese
+    Doctype: HTML5
+    IDE: VS Code
+    Standards: HTML5, CSS3, JavaScript ES6+
+    Components: React, Next.js, TypeScript
+    Software: Node.js, Flutter, Unity

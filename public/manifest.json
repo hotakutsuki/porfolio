@@ -1,0 +1,27 @@
+{
+  "name": "Josue Ortiz - Full Stack & Mobile Developer Portfolio",
+  "short_name": "Josue Ortiz",
+  "description": "Full Stack & Mobile Developer with 8+ years of experience in React, TypeScript, Node.js, Flutter, and AI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/profile.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/profile.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "business", "developer tools"],
+  "lang": "en",
+  "dir": "ltr"
+}
