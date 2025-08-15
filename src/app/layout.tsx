@@ -82,6 +82,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en">
             <head>
+                {/* Mobile viewport configuration - starts at 80% zoom */}
+                <meta name="viewport" content="width=device-width, initial-scale=0.75" />
+
                 <link rel="canonical" href="https://josueortiz.dev" />
                 <meta name="geo.region" content="EC" />
                 <meta name="geo.placename" content="Quito, Ecuador" />
