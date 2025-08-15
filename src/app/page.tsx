@@ -255,6 +255,14 @@ export default function Home() {
                             <ProjectCard project={projects[3]} />
                         </div>
                     </ul>
+                    <span className="text-sm mt-1 justify-end w-full flex">
+                        {t.and_many_more}&nbsp;
+                        <a
+                            href="https://github.com/hotakutsuki"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        > GitHub</a>
+                    </span>
                 </section>
 
                 {/* Contact Section */}
