@@ -1,6 +1,11 @@
 export default function DownloadCV() {
     return (
-        <a href="/src/assets/Profile.pdf" target="_blank" rel="noopener noreferrer" >
+        <a
+            href="/JosueOrtizCV_2025.pdf"
+            download="Josue_Ortiz_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
             <span className="group/downloadcv text-primary inline-flex font-semibold mb-8">
                 <span className="group-hover/downloadcv:text-red-400 transition duration-75 group-hover/downloadcv:-translate-y-px delay-[50ms]" aria-hidden="true">
                     D
